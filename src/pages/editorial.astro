@@ -1,0 +1,60 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Editorial Policy" description="Editorial and evidence policy for Shift at Midnight Compass — how facts are sourced, labeled, and corrected.">
+  <div class="panel hero" style="padding: 28px;">
+    <span class="eyebrow"><span class="dot accent"></span> Evidence Policy</span>
+    <h1>Editorial Policy</h1>
+  </div>
+
+  <section class="panel section">
+    <h2>Evidence Standard</h2>
+    <p style="margin-top: 8px;">Every publishable fact on Shift at Midnight Compass meets at least one of these criteria:</p>
+    <ul style="margin-top: 10px; padding-left: 20px; display: grid; gap: 6px; color: var(--muted); font-size: 14px; line-height: 1.6;">
+      <li>It comes from an official platform source (Steam Store, Xbox Store, or publisher-owned page)</li>
+      <li>It comes from an official publisher video — linked but not copied</li>
+      <li>It comes from a named press source used only for conflict tracking, not as primary truth</li>
+      <li>It is confirmed by the current evidence version and labeled with source ID</li>
+    </ul>
+  </section>
+
+  <section class="panel section">
+    <h2>Confidence Labels</h2>
+    <div style="display: grid; gap: 10px; margin-top: 14px;">
+      <div class="can-card">
+        <h3>NOW — Confirmed</h3>
+        <p>Backed by an official or platform source. Recheck on build day for status changes.</p>
+      </div>
+      <div class="can-card" style="border-color: color-mix(in srgb, var(--warn) 45%, var(--line));">
+        <h3 style="color: var(--warn);">PARTIAL — Verify First</h3>
+        <p>Partial evidence exists but more verification is needed before treating as fact.</p>
+      </div>
+      <div class="cannot-card">
+        <h3>HOLD — Do Not Publish</h3>
+        <p>No official or verified source. Cannot be published as a fact. Includes spoilers, community-sourced gameplay answers, and unverified claims.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel section">
+    <h2>What Is Never Copied</h2>
+    <ul style="margin-top: 8px; padding-left: 20px; display: grid; gap: 6px; color: var(--muted); font-size: 14px; line-height: 1.6;">
+      <li>Steam, Xbox, YouTube, or press screenshots or images</li>
+      <li>Community guide content from Fandom, TVTropes, Reddit, or Discord</li>
+      <li>YouTube gameplay footage or frames</li>
+      <li>Exact walkthrough steps, customer tells, or solution content from any source</li>
+      <li>Claims sourced only from community SERP results without official verification</li>
+    </ul>
+  </section>
+
+  <section class="panel section">
+    <h2>Corrections Policy</h2>
+    <p style="margin-top: 8px;">If a fact on this site becomes outdated or incorrect as official sources change, it will be corrected. If you have a verifiable official source that contradicts something published here, use the <a href="/contact/" style="color: var(--accent);">contact page</a>.</p>
+  </section>
+
+  <section class="panel section">
+    <h2>No AI Fabrication</h2>
+    <p style="margin-top: 8px;">This site does not use AI to generate gameplay facts,数值, or answers. No fact is published without a traceable source ID from the evidence registry. When a question cannot be answered from the current evidence pack, the answer is labeled as HOLD rather than invented.</p>
+  </section>
+</Base>

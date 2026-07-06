@@ -1,0 +1,250 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="">
+  <!-- ── Hero ──────────────────────────────────────── -->
+  <div class="hero">
+
+    <!-- Left: hub intro -->
+    <div class="hero-main">
+      <div class="hero-badge">
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="4"/></svg>
+        Demo Live on Steam
+      </div>
+
+      <h1>Shift at Midnight<br/>Guide Hub</h1>
+
+      <p class="hero-lead">
+        Everything the demo teaches you — and everything the full game will test.
+        Store tasks, customer inspection, co-op roles, and survival basics:
+        all from official sources. No walkthrough spoilers.
+      </p>
+
+      <!-- Quick answer strip -->
+      <div class="qa-strip">
+        <div class="qa-pill">
+          <span class="qal">Demo</span>
+          <span class="qav">3 pre-scripted shifts</span>
+          <span class="qab qab-green">Live</span>
+        </div>
+        <div class="qa-pill">
+          <span class="qal">Full game</span>
+          <span class="qav">13 randomized shifts</span>
+          <span class="qab qab-amber">Coming</span>
+        </div>
+        <div class="qa-pill">
+          <span class="qal">Co-op</span>
+          <span class="qav">Online 2–3 players</span>
+          <span class="qab qab-blue">Confirmed</span>
+        </div>
+      </div>
+
+      <!-- CTA buttons -->
+      <div class="cta-row">
+        <a href="/demo/" class="btn btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Read the Demo Guide
+        </a>
+        <a href="/beginner-guide/" class="btn btn-outline">
+          First Shift Guide
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: popular guides list -->
+    <div class="hero-sidebar">
+      <div class="sidebar-label">Popular Guides</div>
+
+      <a class="guide-link-card" href="/demo/">
+        <div class="gl-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
+        <div class="gl-body">
+          <div class="gl-title">Demo Guide</div>
+          <div class="gl-desc">3 shifts · Store tasks · Inspection loop</div>
+        </div>
+        <span class="gl-badge gl-badge-green">Live</span>
+      </a>
+
+      <a class="guide-link-card" href="/beginner-guide/">
+        <div class="gl-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <div class="gl-body">
+          <div class="gl-title">First Shift Guide</div>
+          <div class="gl-desc">Shift flow · Store tasks · ID / Computer / Behavior</div>
+        </div>
+        <span class="gl-badge gl-badge-blue">Spoiler-safe</span>
+      </a>
+
+      <a class="guide-link-card" href="/customer-checks/">
+        <div class="gl-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div class="gl-body">
+          <div class="gl-title">Customer Inspection</div>
+          <div class="gl-desc">3-category matrix · Suspicion tracker</div>
+        </div>
+        <span class="gl-badge gl-badge-green">Framework</span>
+      </a>
+
+      <a class="guide-link-card" href="/co-op/">
+        <div class="gl-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="gl-body">
+          <div class="gl-title">Co-op Prep Guide</div>
+          <div class="gl-desc">Role split · Proximity chat · Demo checklist</div>
+        </div>
+        <span class="gl-badge gl-badge-green">2–3 players</span>
+      </a>
+
+      <a class="guide-link-card" href="/survival-phase/">
+        <div class="gl-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <div class="gl-body">
+          <div class="gl-title">Survival Phase</div>
+          <div class="gl-desc">Board up · Set traps · Hide · Communicate</div>
+        </div>
+        <span class="gl-badge gl-badge-blue">Spoiler-safe</span>
+      </a>
+
+      <a class="guide-link-card" href="/platforms/">
+        <div class="gl-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="gl-body">
+          <div class="gl-title">Platform Status</div>
+          <div class="gl-desc">Steam · Xbox · PS5 · Game Pass clarity</div>
+        </div>
+        <span class="gl-badge gl-badge-amber">Check</span>
+      </a>
+
+      <!-- Search bar (static) -->
+      <div class="search-bar">
+        <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Guide search coming soon..." readonly />
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Available Sections ─────────────────────────── -->
+  <section class="section">
+    <div class="section-header">
+      <div>
+        <h2>Available Guides</h2>
+        <p>Pick your entry point. All pages are source-backed and spoiler-aware.</p>
+      </div>
+      <span class="eyebrow">6 guides</span>
+    </div>
+
+    <div class="card-grid">
+      <a class="guide-card" href="/demo/">
+        <div class="gc-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
+        <div class="gc-title">Demo Guide</div>
+        <div class="gc-desc">What the demo actually contains: 3 pre-scripted shifts, store tasks, inspection loop, and the survival phase trigger. Start here before installing.</div>
+        <div class="gc-footer">
+          <span class="gc-badge" style="background: var(--green-bg); color: var(--green); border: 1px solid var(--green-line);">Live on Steam</span>
+          <span class="gc-btn">Read guide →</span>
+        </div>
+      </a>
+
+      <a class="guide-card" href="/beginner-guide/">
+        <div class="gc-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <div class="gc-title">First Shift Guide</div>
+        <div class="gc-desc">The confirmed shift loop: arrive, manage shelves/quota/deliveries/cleaning, inspect customers by category, communicate, react to danger. No spoilers.</div>
+        <div class="gc-footer">
+          <span class="gc-badge" style="background: var(--blue-bg); color: var(--blue); border: 1px solid var(--blue-line);">Spoiler-safe</span>
+          <span class="gc-btn">Read guide →</span>
+        </div>
+      </a>
+
+      <a class="guide-card" href="/customer-checks/">
+        <div class="gc-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div class="gc-title">Customer Inspection Guide</div>
+        <div class="gc-desc">The three confirmed inspection categories — ID, computer details, and behavior — plus a suspicion level tracker and demo recording template.</div>
+        <div class="gc-footer">
+          <span class="gc-badge" style="background: var(--green-bg); color: var(--green); border: 1px solid var(--green-line);">Framework</span>
+          <span class="gc-btn">Read guide →</span>
+        </div>
+      </a>
+
+      <a class="guide-card" href="/co-op/">
+        <div class="gc-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="gc-title">Co-op Prep Guide</div>
+        <div class="gc-desc">Plan your 2–3 player team: front counter, store tasks, and verification caller roles. Proximity chat notes and a demo co-op test checklist.</div>
+        <div class="gc-footer">
+          <span class="gc-badge" style="background: var(--green-bg); color: var(--green); border: 1px solid var(--green-line);">Online 2–3</span>
+          <span class="gc-btn">Read guide →</span>
+        </div>
+      </a>
+
+      <a class="guide-card" href="/survival-phase/">
+        <div class="gc-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <div class="gc-title">Survival Phase Basics</div>
+        <div class="gc-desc">When customers turn dangerous: board up, set traps, hide, and communicate. The four confirmed response options and what stays unverified.</div>
+        <div class="gc-footer">
+          <span class="gc-badge" style="background: var(--blue-bg); color: var(--blue); border: 1px solid var(--blue-line);">Spoiler-safe</span>
+          <span class="gc-btn">Read guide →</span>
+        </div>
+      </a>
+
+      <a class="guide-card" href="/platforms/">
+        <div class="gc-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="gc-title">Platform Status</div>
+        <div class="gc-desc">Steam, Xbox, PS5, and Game Pass — each clearly separated so you know exactly what applies to your setup. No unconfirmed claims.</div>
+        <div class="gc-footer">
+          <span class="gc-badge" style="background: var(--accent-bg); color: var(--accent); border: 1px solid var(--accent-line);">Check before buy</span>
+          <span class="gc-btn">Read guide →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── Source-backed section ──────────────────────── -->
+  <section class="source-section">
+    <h2>What This Site Is — and Is Not</h2>
+    <div class="can-cannot">
+      <div class="can-card">
+        <h3>✓ Source-backed facts</h3>
+        <ul>
+          <li>Genre, platform, and developer confirmed by Steam and Xbox</li>
+          <li>Demo includes intro content and 3 pre-scripted shifts (Steam)</li>
+          <li>Full game has 13 randomly generated shifts (Steam)</li>
+          <li>Store tasks: shelves, quota, deliveries, cleaning (Steam)</li>
+          <li>Inspection categories: ID, computer details, behavior (Steam)</li>
+          <li>Survival options: board up, set traps, hide (Steam)</li>
+          <li>Online co-op for 2–3 players (Xbox confirmed)</li>
+          <li>No external screenshots, Steam images, or YouTube frames used</li>
+        </ul>
+      </div>
+      <div class="cannot-card">
+        <h3>✗ Not published here</h3>
+        <ul>
+          <li>Exact ID check passing criteria or fake customer tells</li>
+          <li>Exact customer answers, doppelganger identification steps</li>
+          <li>Best tactics, optimal builds, or route walkthroughs</li>
+          <li>Final release date (conflicting press — no official confirmation)</li>
+          <li>PS5 as a confirmed platform (query signal only)</li>
+          <li>Game Pass as confirmed availability (press lead only)</li>
+          <li>Exact Joe's Diner newsletter answer (unverified)</li>
+          <li>Exact survival trigger conditions or trap types</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</Base>

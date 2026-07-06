@@ -1,0 +1,77 @@
+---
+import '../styles/global.css';
+import { SITE, NAV } from '../data/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description = SITE.description,
+  canonical,
+  noindex = false,
+} = Astro.props;
+
+const pageTitle = title ? `${title} | ${SITE.title}` : SITE.title;
+const canonicalUrl = canonical ? new URL(canonical, Astro.site) : Astro.url;
+---
+
+<!doctype html>
+<html lang="en" data-theme={SITE.theme || 'tactical-console'}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <!-- CSS-only favicon: amber compass mark -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%2304080d'/><circle cx='50' cy='50' r='32' fill='none' stroke='%23ff9432' stroke-width='6'/><circle cx='50' cy='50' r='5' fill='%23ffb555'/><line x1='50' y1='18' x2='50' y2='32' stroke='%23ffd580' stroke-width='5' stroke-linecap='round'/><line x1='50' y1='68' x2='50' y2='82' stroke='%23ff9432' stroke-width='5' stroke-linecap='round'/><line x1='18' y1='50' x2='32' y2='50' stroke='%23ff9432' stroke-width='5' stroke-linecap='round'/><line x1='68' y1='50' x2='82' y2='50' stroke='%23ff9432' stroke-width='5' stroke-linecap='round'/></svg>" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="/">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <strong>{SITE.title}</strong>
+            <span>{SITE.platform} · Unofficial</span>
+          </span>
+        </a>
+        <nav class="nav" aria-label="Primary navigation">
+          {NAV.map(item => (
+            <a
+              href={item.url}
+              class={Astro.url.pathname === item.url ? 'active' : ''}
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="shell">
+      <slot />
+    </main>
+
+    <footer class="shell" style="padding-top: 0; padding-bottom: 28px;">
+      <p class="footer-note">
+        <strong>{SITE.title}</strong> is an unofficial player status hub, not affiliated with Bun Muen, Kwalee, or any platform.<br />
+        All facts come from publicly available Steam, Xbox, or official publisher sources. Evidence version {SITE.evidenceVersion}. Ads and analytics are off.<br />
+        <a href="/editorial/">Editorial policy</a> · <a href="/sources/">Sources</a> · <a href="/about/">About</a>
+      </p>
+    </footer>
+  </body>
+</html>

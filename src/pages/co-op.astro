@@ -1,0 +1,212 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site';
+---
+
+<Base title="Co-op Prep Guide" description="Shift at Midnight co-op prep — 2-3 player role split, proximity chat notes, and demo multiplayer checklist.">
+  <div class="page-grid">
+    <div>
+
+      <!-- Hero -->
+      <div class="panel hero" style="padding: 24px 28px;">
+        <span class="eyebrow"><span class="dot blue"></span> Multiplayer Guide · {SITE.evidenceVersion}</span>
+        <h1>Co-op Prep Guide</h1>
+        <p class="lead">Prepare your team for Shift at Midnight's online co-op before you install the demo. Role split, proximity chat, and demo test checklist — sourced from official platform pages only.</p>
+      </div>
+
+      <!-- Co-op status -->
+      <section class="panel section">
+        <h2>Co-op Status at a Glance</h2>
+
+        <div class="grid-2" style="margin-top: 14px;">
+          <div class="status-card good">
+            <h3>Online Co-op</h3>
+            <p>Confirmed on Steam and Xbox — online multiplayer with other players is a core feature.</p>
+          </div>
+          <div class="status-card good">
+            <h3>Player Count</h3>
+            <p>Xbox page confirms 2-3 players for online co-op. Demo supports multiplayer sessions.</p>
+          </div>
+          <div class="status-card good">
+            <h3>Single Player</h3>
+            <p>Xbox page lists single player. Whether the Steam demo supports solo play requires hands-on verification.</p>
+          </div>
+          <div class="status-card warn">
+            <h3>Proximity Chat</h3>
+            <p>May be present if visible in current official Steam source. Confirm with demo before relying on it.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Role planner -->
+      <section class="panel section">
+        <h2>2–3 Player Role Planner</h2>
+        <p style="margin-top: 4px; font-size: 13px;">Official sources confirm the shift task categories. Use these as a planning framework for your team — exact tactics are not yet published.</p>
+
+        <!-- Role cards: 3 columns -->
+        <div class="feature-grid" style="margin-top: 16px; grid-template-columns: repeat(3, minmax(0, 1fr));">
+          <div class="feature-card" style="cursor: default;">
+            <div class="fc-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="fc-title">Front Counter</div>
+            <div class="fc-desc">First point of contact for arriving customers. Handles initial ID and computer detail checks. Coordinates with store team on suspicious findings.</div>
+            <span class="fc-badge safe">Inspection</span>
+          </div>
+          <div class="feature-card" style="cursor: default;">
+            <div class="fc-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div class="fc-title">Store Task</div>
+            <div class="fc-desc">Manages shelves, meets quota, handles deliveries, and keeps the store clean. Shares task status with inspection team to avoid distraction during critical checks.</div>
+            <span class="fc-badge confirmed">Confirmed task</span>
+          </div>
+          <div class="feature-card" style="cursor: default;">
+            <div class="fc-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="fc-title">Verification Caller</div>
+            <div class="fc-desc">Calls out inspection category (ID / computer / behavior) without stating the specific answer. Helps team react to danger without spoiling the solution.</div>
+            <span class="fc-badge safe">Communication</span>
+          </div>
+        </div>
+
+        <div class="partial-panel" style="margin-top: 16px;">
+          <h3>Role Planning Notes</h3>
+          <p>These role descriptions are based on official platform source categories (store tasks + customer inspection). They are planning frameworks, not verified demo tactics. Test them in the demo and update when hands-on notes exist.</p>
+        </div>
+      </section>
+
+      <!-- Proximity chat -->
+      <section class="panel section">
+        <h2>Proximity Chat Implications</h2>
+        <p style="margin-top: 4px; font-size: 13px;">Proximity chat may be present if supported by the current official Steam source. Plan your team communication around what is confirmed.</p>
+
+        <div class="check-list" style="margin-top: 14px;">
+          <div class="check-item done">
+            <div class="check-num">✓</div>
+            <div class="check-text">
+              <strong>Call category, not answer</strong>
+              <p>During inspection: call out whether the signal is ID-related, computer-detail-related, or behavior-related — not the specific result. This keeps the challenge intact for all players.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">✓</div>
+            <div class="check-text">
+              <strong>Stay close when verifying</strong>
+              <p>If proximity chat is active, staying near your teammate during an inspection lets you coordinate in real time without typing or leaving your post.</p>
+            </div>
+            <span class="check-badge good">Spatial</span>
+          </div>
+          <div class="check-item partial">
+            <div class="check-num">?</div>
+            <div class="check-text">
+              <strong>Proximity chat presence in demo</strong>
+              <p>Whether proximity chat is actually enabled in the current demo build is not confirmed. Verify with the demo before planning around it.</p>
+            </div>
+            <span class="check-badge warn">Verify in demo</span>
+          </div>
+          <div class="check-item hold">
+            <div class="check-num">~</div>
+            <div class="check-text">
+              <strong>Exact proximity chat mechanics</strong>
+              <p>Voice range radius, mute behavior, and cross-platform voice compatibility are not confirmed from official sources.</p>
+            </div>
+            <span class="check-badge muted">HOLD</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Demo test checklist -->
+      <section class="panel section">
+        <h2>Demo Co-op Test Checklist</h2>
+        <p style="margin-top: 4px; font-size: 13px;">Test these items during your first demo session to build a co-op baseline before the full game launches.</p>
+
+        <div class="check-list" style="margin-top: 14px;">
+          <div class="check-item done">
+            <div class="check-num">1</div>
+            <div class="check-text">
+              <strong>Invite flow works</strong>
+              <p>Can you invite a friend via Steam/Xbox? Does a direct invite or party code work? Note the method that succeeded.</p>
+            </div>
+            <span class="check-badge good">Test now</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">2</div>
+            <div class="check-text">
+              <strong>Role split is manageable</strong>
+              <p>Can two players cover front counter + store tasks without both being overwhelmed simultaneously? Note where coordination breaks down.</p>
+            </div>
+            <span class="check-badge good">Test now</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">3</div>
+            <div class="check-text">
+              <strong>Voice range in the store</strong>
+              <p>Can you hear your teammate from the back storage area when they are at the front counter? Note dead zones if proximity chat is active.</p>
+            </div>
+            <span class="check-badge good">Test now</span>
+          </div>
+          <div class="check-item partial">
+            <div class="check-num">4</div>
+            <div class="check-text">
+              <strong>Failure recovery</strong>
+              <p>What happens when a customer check fails? Do both players get alerted? Does the game pause, continue, or trigger a survival phase? Note the behavior.</p>
+            </div>
+            <span class="check-badge warn">Observe</span>
+          </div>
+          <div class="check-item hold">
+            <div class="check-num">5</div>
+            <div class="check-text">
+              <strong>Exact co-op timing and shift pacing</strong>
+              <p>How long is a demo shift? Does difficulty scale with player count? These details need hands-on verification.</p>
+            </div>
+            <span class="check-badge muted">HOLD</span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <aside>
+      <div class="panel side">
+        <h2>Related Pages</h2>
+        <div style="display: grid; gap: 8px; margin-top: 12px;">
+          <p><a href="/demo/" style="color: var(--gold);">→ Demo Guide</a></p>
+          <p><a href="/beginner-guide/" style="color: var(--gold);">→ First Shift Guide</a></p>
+          <p><a href="/customer-checks/" style="color: var(--gold);">→ Customer Inspection</a></p>
+          <p><a href="/survival-phase/" style="color: var(--gold);">→ Survival Phase</a></p>
+          <p><a href="/sources/" style="color: var(--gold);">→ Source Matrix</a></p>
+        </div>
+      </div>
+
+      <div class="panel side" style="margin-top: 14px;">
+        <h2>Source Basis</h2>
+        <div class="mini">
+          <h3>Xbox page</h3>
+          <p>Online co-op · online multiplayer · 2-3 players · single player confirmed</p>
+        </div>
+        <div class="mini" style="margin-top: 8px;">
+          <h3>Steam page</h3>
+          <p>Online co-op detective horror · multiplayer demo confirmed</p>
+        </div>
+        <div class="mini" style="margin-top: 8px;">
+          <h3>Proximity chat</h3>
+          <p>Only if visible in current official Steam source — verify in demo</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</Base>
+
+<style>
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+  @media (max-width: 700px) {
+    .feature-grid { grid-template-columns: 1fr; }
+  }
+</style>

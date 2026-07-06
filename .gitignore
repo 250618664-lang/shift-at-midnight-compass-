@@ -1,0 +1,14 @@
+dist/
+.astro/
+node_modules/
+.env
+.env.local
+.env.*.local
+.DS_Store
+.vscode/settings.json
+
+# Private project files — never upload these
+/research/
+/runs/
+/data/
+/.agents/

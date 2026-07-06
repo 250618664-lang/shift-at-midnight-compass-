@@ -1,0 +1,230 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Sources" description="Shift at Midnight source confidence matrix — official, platform, press, video, and community sources labeled by trustworthiness.">
+  <div class="panel hero" style="padding: 24px 28px;">
+    <span class="eyebrow"><span class="dot blue"></span> Trust Matrix · Evidence: 2026-07-06</span>
+    <h1>Sources &amp; Confidence</h1>
+    <p class="lead">Every source is labeled by type and confidence. Official and platform sources are primary. Press and video are secondary. Community leads are used only for question discovery — never copied as answers.</p>
+  </div>
+
+  <!-- No screenshots policy -->
+  <section class="panel section">
+    <h2>Why This Guide Has No Screenshots Yet</h2>
+
+    <div class="can-cannot" style="margin-top: 14px;">
+      <div class="can-card">
+        <h3>✓ Our approach to visual assets</h3>
+        <ul>
+          <li>We do not reuse Steam, Xbox, or YouTube images without rights clearance.</li>
+          <li>We use original CSS/HTML components — diagrams, tables, status boards, inspection matrices, flow charts — until we have self-captured or permission-cleared assets.</li>
+          <li>Official store pages and videos are linked as sources, not embedded as content.</li>
+          <li>All visual components on this site are generated from registered facts, not copied from any external media.</li>
+        </ul>
+      </div>
+      <div class="cannot-card">
+        <h3>✗ What we will not do</h3>
+        <ul>
+          <li>Download and publish Steam capsule images or screenshots.</li>
+          <li>Embed YouTube trailer frames or thumbnails.</li>
+          <li>Copy Xbox store art or press article images.</li>
+          <li>Reuse competitor guide screenshots or community wiki images.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="partial-panel" style="margin-top: 14px;">
+      <h3>When this may change</h3>
+      <p>If the developer or publisher grants media usage rights, or if we capture gameplay screenshots during hands-on testing, original visual assets may be added with clear attribution and rights status.</p>
+    </div>
+  </section>
+
+  <!-- Source confidence matrix -->
+  <section class="panel section">
+    <h2>Source Confidence Matrix</h2>
+
+    <table class="data-table" style="margin-top: 14px;">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Type</th>
+          <th>Source</th>
+          <th>Use</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="mono" style="font-size: 11px;">SAM-SRC-001</td>
+          <td><span class="source-tag official">official_platform</span></td>
+          <td>Steam Store page</td>
+          <td>Genre, co-op premise, coming-soon status, store task categories, inspection categories, survival actions</td>
+        </tr>
+        <tr>
+          <td class="mono" style="font-size: 11px;">SAM-SRC-002</td>
+          <td><span class="source-tag official">official_platform</span></td>
+          <td>Steam Multiplayer Demo page</td>
+          <td>Demo existence, intro content, 3 pre-scripted shifts, limited tools and weapons, multiplayer demo</td>
+        </tr>
+        <tr>
+          <td class="mono" style="font-size: 11px;">SAM-SRC-003</td>
+          <td><span class="source-tag official">official_platform</span></td>
+          <td>Steam News / announcements</td>
+          <td>Release status timeline, update references</td>
+        </tr>
+        <tr>
+          <td class="mono" style="font-size: 11px;">SAM-SRC-004</td>
+          <td><span class="source-tag official">official_platform</span></td>
+          <td>Xbox Store page</td>
+          <td>Xbox platform confirmed, Xbox Play Anywhere, online co-op, online multiplayer 2-3 players, single player</td>
+        </tr>
+        <tr>
+          <td class="mono" style="font-size: 11px;">SAM-SRC-005</td>
+          <td><span class="source-tag official">developer_platform</span></td>
+          <td>itch.io developer page</td>
+          <td>Legacy context — prefer Steam for current info</td>
+        </tr>
+        <tr>
+          <td class="mono" style="font-size: 11px;">SAM-SRC-006</td>
+          <td><span class="source-tag video">official_video</span></td>
+          <td>Kwalee YouTube Trailer</td>
+          <td>Source link only — no frames or thumbnails copied</td>
+        </tr>
+        <tr>
+          <td class="mono" style="font-size: 11px;">SAM-SRC-007</td>
+          <td><span class="source-tag video">official_video</span></td>
+          <td>Triple-i Release Trailer</td>
+          <td>Source link only — no frames or thumbnails copied</td>
+        </tr>
+        <tr>
+          <td class="mono" style="font-size: 11px;">SAM-SRC-008</td>
+          <td><span class="source-tag press">press</span></td>
+          <td>Gematsu (April article)</td>
+          <td>May 28 date reference — conflict tracker only, not confirmed date</td>
+        </tr>
+        <tr>
+          <td class="mono" style="font-size: 11px;">SAM-SRC-009</td>
+          <td><span class="source-tag press">press</span></td>
+          <td>PC Gamer July release calendar</td>
+          <td>July window reheat signal — secondary context</td>
+        </tr>
+        <tr>
+          <td class="mono" style="font-size: 11px;">SAM-SRC-010</td>
+          <td><span class="source-tag press">press</span></td>
+          <td>TrueAchievements Game Pass article</td>
+          <td>Discovery context — verify against official Xbox/Microsoft pages</td>
+        </tr>
+        <tr>
+          <td class="mono" style="font-size: 11px;">SAM-SRC-011</td>
+          <td><span class="source-tag trends">user_trends</span></td>
+          <td>Google Trends (user-provided)</td>
+          <td>Demand signal only — not a gameplay fact source</td>
+        </tr>
+        <tr>
+          <td class="mono" style="font-size: 11px;">SAM-SRC-012</td>
+          <td><span class="source-tag community">community_lead</span></td>
+          <td>YouTube SERP / community SERP</td>
+          <td>Question discovery only — do not copy answers, screenshots, or frames</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Type labels explained -->
+  <section class="panel section">
+    <h2>Type Labels Explained</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 14px;">
+      <div class="can-card">
+        <h3>official_platform</h3>
+        <p>Steam Store, Xbox Store, or platform-owned pages. Highest confidence for platform availability, store status, game identity, and confirmed gameplay categories.</p>
+      </div>
+      <div class="can-card">
+        <h3>official_video</h3>
+        <p>Official publisher YouTube channel. Can be linked as a source. Frames, thumbnails, and long transcripts cannot be copied.</p>
+      </div>
+      <div class="can-card">
+        <h3>press</h3>
+        <p>Journalism and gaming press. Useful for release-date conflict tracking and discovery. Secondary — verify before treating as fact.</p>
+      </div>
+      <div class="can-card">
+        <h3>user_trends</h3>
+        <p>Google Trends data. Confirms demand signals but is not a gameplay fact source.</p>
+      </div>
+      <div class="cannot-card" style="grid-column: 1 / -1;">
+        <h3>community_lead</h3>
+        <p>YouTube gameplay, community wikis, Reddit, Discord, Fandom. Use ONLY to identify player questions and SERP saturation. Do not copy claims, steps, screenshots, or video frames. Cannot be the sole source for any published fact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Source → page mapping -->
+  <section class="panel section">
+    <h2>Where Sources Appear</h2>
+
+    <table class="data-table" style="margin-top: 14px;">
+      <thead>
+        <tr>
+          <th>Source</th>
+          <th>Used on</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SAM-SRC-001 (Steam store)</td>
+          <td>Homepage, Demo Guide, Beginner Guide, Customer Inspection, Survival Phase, Platforms, Sources</td>
+        </tr>
+        <tr>
+          <td>SAM-SRC-002 (Steam Demo)</td>
+          <td>Demo Guide, Beginner Guide, Customer Inspection, Co-op Prep</td>
+        </tr>
+        <tr>
+          <td>SAM-SRC-004 (Xbox)</td>
+          <td>Platforms, Co-op Prep, Survival Phase</td>
+        </tr>
+        <tr>
+          <td>SAM-SRC-006/007 (YouTube)</td>
+          <td>Sources page (links only), Platforms page (links only)</td>
+        </tr>
+        <tr>
+          <td>SAM-SRC-008/009 (press)</td>
+          <td>Release Date Conflict, Platforms (secondary context)</td>
+        </tr>
+        <tr>
+          <td>SAM-SRC-011 (Trends)</td>
+          <td>Homepage, Joe's Diner Newsletter</td>
+        </tr>
+        <tr>
+          <td>SAM-SRC-012 (community)</td>
+          <td>Sources page (question discovery only)</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Update policy -->
+  <section class="panel section">
+    <h2>Update Policy</h2>
+
+    <div class="grid-2" style="margin-top: 14px;">
+      <div class="can-card">
+        <h3>When a page can get thicker</h3>
+        <ul>
+          <li>New official or platform source appears</li>
+          <li>Hands-on demo notes verify a current-build mechanic</li>
+          <li>GSC shows a query that maps to an existing page intent</li>
+          <li>A conflicting claim needs a status-only explanation</li>
+        </ul>
+      </div>
+      <div class="cannot-card">
+        <h3>When a page stays held</h3>
+        <ul>
+          <li>The only evidence is a copied community answer</li>
+          <li>The fact would spoil exact gameplay without verification</li>
+          <li>The claim is a platform or date rumor without official confirmation</li>
+          <li>The page would duplicate another search intent</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</Base>

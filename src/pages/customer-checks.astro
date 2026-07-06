@@ -1,0 +1,189 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site';
+---
+
+<Base title="Customer Inspection Guide" description="Shift at Midnight customer inspection guide — three confirmed inspection categories, suspicion tracker, and demo recording template.">
+  <div class="page-grid">
+    <div>
+
+      <!-- Hero -->
+      <div class="panel hero" style="padding: 24px 28px;">
+        <span class="eyebrow"><span class="dot yellow"></span> Inspection Matrix · {SITE.evidenceVersion}</span>
+        <h1>Customer Inspection Guide</h1>
+        <p class="lead">The three confirmed inspection categories — ID, computer details, and behavior. Use this as your classification framework during the demo. Exact tells and specific answers are held until verified.</p>
+      </div>
+
+      <!-- Inspection matrix -->
+      <section class="panel section">
+        <h2>Inspection Matrix</h2>
+        <p style="margin-top: 4px; font-size: 13px;">Three inspection categories confirmed from official sources. Each is a confirmed category — the specific signals within each category are not yet published.</p>
+
+        <table class="data-table" style="margin-top: 14px;">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Official description</th>
+              <th>What to look for (framework)</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>ID Check</strong></td>
+              <td>Inspect official identity documents presented by customers.</td>
+              <td>Document type, expiration, photo match, official markings. Compare against expected shift context.</td>
+              <td><span class="source-tag official">Category confirmed</span></td>
+            </tr>
+            <tr>
+              <td><strong>Computer Details</strong></td>
+              <td>Review computer or device information the customer provides.</td>
+              <td>Hardware specs, software versions, login credentials, network identifiers. Compare against known patterns.</td>
+              <td><span class="source-tag official">Category confirmed</span></td>
+            </tr>
+            <tr>
+              <td><strong>Behavior</strong></td>
+              <td>Observe customer communication and actions during the inspection.</td>
+              <td>Speech patterns, reaction timing, body language cues, consistency with ID and computer claims.</td>
+              <td><span class="source-tag official">Category confirmed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Suspicion tracker (CSS visual, no answers) -->
+      <section class="panel section">
+        <h2>Suspicion Level Tracker</h2>
+        <p style="margin-top: 4px; font-size: 13px;">A visual framework for tracking suspicion during an inspection. Each level describes escalating uncertainty — not specific customer answers.</p>
+
+        <!-- Suspicion level bars -->
+        <div class="suspicion-tracker" style="display: grid; gap: 10px; margin-top: 16px;">
+
+          <div style="display: grid; grid-template-columns: 100px 1fr auto; gap: 12px; align-items: center; padding: 12px; border: 1px solid rgba(85, 230, 174, 0.35); border-radius: 8px; background: rgba(85, 230, 174, 0.05);">
+            <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--green);">Clear</div>
+            <div style="height: 8px; border-radius: 4px; background: rgba(85, 230, 174, 0.15); position: relative; overflow: hidden;">
+              <div style="position: absolute; left: 0; top: 0; height: 100%; width: 12%; border-radius: 4px; background: var(--green);"></div>
+            </div>
+            <div style="font-size: 10px; color: var(--muted-2); font-family: var(--mono);">0–12%</div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 100px 1fr auto; gap: 12px; align-items: center; padding: 12px; border: 1px solid rgba(79, 216, 255, 0.35); border-radius: 8px; background: rgba(79, 216, 255, 0.05);">
+            <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--blue);">Watch</div>
+            <div style="height: 8px; border-radius: 4px; background: rgba(79, 216, 255, 0.15); position: relative; overflow: hidden;">
+              <div style="position: absolute; left: 0; top: 0; height: 100%; width: 38%; border-radius: 4px; background: var(--blue);"></div>
+            </div>
+            <div style="font-size: 10px; color: var(--muted-2); font-family: var(--mono);">13–38%</div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 100px 1fr auto; gap: 12px; align-items: center; padding: 12px; border: 1px solid rgba(255, 197, 95, 0.4); border-radius: 8px; background: rgba(255, 197, 95, 0.06);">
+            <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--gold);">Verify</div>
+            <div style="height: 8px; border-radius: 4px; background: rgba(255, 197, 95, 0.15); position: relative; overflow: hidden;">
+              <div style="position: absolute; left: 0; top: 0; height: 100%; width: 63%; border-radius: 4px; background: var(--gold);"></div>
+            </div>
+            <div style="font-size: 10px; color: var(--muted-2); font-family: var(--mono);">39–63%</div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 100px 1fr auto; gap: 12px; align-items: center; padding: 12px; border: 1px solid rgba(255, 77, 106, 0.45); border-radius: 8px; background: rgba(255, 77, 106, 0.07);">
+            <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--red);">Danger</div>
+            <div style="height: 8px; border-radius: 4px; background: rgba(255, 77, 106, 0.15); position: relative; overflow: hidden;">
+              <div style="position: absolute; left: 0; top: 0; height: 100%; width: 88%; border-radius: 4px; background: var(--red);"></div>
+            </div>
+            <div style="font-size: 10px; color: var(--muted-2); font-family: var(--mono);">64–88%</div>
+          </div>
+
+        </div>
+
+        <div class="hold-panel" style="margin-top: 14px;">
+          <h3>Framework only — no specific signals</h3>
+          <p>These levels describe a general suspicion escalation framework. The specific customer signals that move you from Watch to Verify are not published. Use the demo to develop your own observations before publishing.</p>
+        </div>
+      </section>
+
+      <!-- Demo test recording template -->
+      <section class="panel section">
+        <h2>Demo Inspection Recording Template</h2>
+        <p style="margin-top: 4px; font-size: 13px;">During your demo session, record one row per customer inspection. This builds your own evidence base for future guide updates.</p>
+
+        <table class="data-table" style="margin-top: 14px;">
+          <thead>
+            <tr>
+              <th>Field</th>
+              <th>What to record</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Customer cue category</strong></td>
+              <td>Which of the three categories did the signal fall into?</td>
+              <td>ID · Computer · Behavior</td>
+            </tr>
+            <tr>
+              <td><strong>Source screen</strong></td>
+              <td>What screen or interface showed the customer data?</td>
+              <td>Counter screen / device prompt / verbal</td>
+            </tr>
+            <tr>
+              <td><strong>Co-op callout</strong></td>
+              <td>How did you communicate the signal to your team?</td>
+              <td>"ID mismatch" / "behavior off" / "check computer"</td>
+            </tr>
+            <tr>
+              <td><strong>Team decision</strong></td>
+              <td>What did the team decide — pass, fail, or escalate?</td>
+              <td>Admit · Refuse · Survival phase trigger</td>
+            </tr>
+            <tr>
+              <td><strong>Result</strong></td>
+              <td>What happened after the decision?</td>
+              <td>Customer left / survival phase / shift continued</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- What stays unverified -->
+      <section class="panel section">
+        <h2>What Stays Unverified</h2>
+
+        <div class="cannot-card" style="margin-top: 14px;">
+          <h3>✗ HOLD — exact inspection answers</h3>
+          <ul>
+            <li>Specific ID check passing criteria (document types, expiry rules, photo match thresholds)</li>
+            <li>Exact computer detail anomalies (which specs, numbers, or strings indicate a problem)</li>
+            <li>Behavioral red flags (specific phrases, reactions, or patterns)</li>
+            <li>Complete list of fake customer types and their distinguishing features</li>
+            <li>Whether each category has independent weight or interacts with others</li>
+            <li>Threshold for survival phase trigger</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <aside>
+      <div class="panel side">
+        <h2>Related Pages</h2>
+        <div style="display: grid; gap: 8px; margin-top: 12px;">
+          <p><a href="/beginner-guide/" style="color: var(--gold);">→ First Shift Guide</a></p>
+          <p><a href="/survival-phase/" style="color: var(--gold);">→ Survival Phase</a></p>
+          <p><a href="/co-op/" style="color: var(--gold);">→ Co-op Prep Guide</a></p>
+          <p><a href="/demo/" style="color: var(--gold);">→ Demo Guide</a></p>
+          <p><a href="/sources/" style="color: var(--gold);">→ Source Matrix</a></p>
+        </div>
+      </div>
+
+      <div class="panel side" style="margin-top: 14px;">
+        <h2>Source Basis</h2>
+        <div class="mini">
+          <h3>SAM-SRC-001</h3>
+          <p>Steam — online co-op detective horror; inspection categories confirmed as core loop</p>
+        </div>
+        <div class="mini" style="margin-top: 8px;">
+          <h3>Demo page</h3>
+          <p>Three inspection categories confirmed via official Steam demo description</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</Base>

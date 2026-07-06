@@ -1,0 +1,216 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site';
+---
+
+<Base title="Platforms" description="Shift at Midnight platform guide — which version to watch, Steam, Xbox, Game Pass, and PS5 status clearly separated.">
+  <div class="page-grid">
+    <div>
+
+      <!-- Hero -->
+      <div class="panel hero" style="padding: 24px 28px;">
+        <span class="eyebrow"><span class="dot yellow"></span> Platform Guide · {SITE.evidenceVersion}</span>
+        <h1>Platform Status</h1>
+        <p class="lead">Steam, Xbox, Game Pass, and PS5 — clearly separated so you can find the right version fast. No unconfirmed platform claims.</p>
+      </div>
+
+      <!-- Which version to watch -->
+      <section class="panel section">
+        <h2>Which Version Should I Watch?</h2>
+
+        <div class="feature-grid" style="margin-top: 16px; grid-template-columns: repeat(2, minmax(0, 1fr));">
+          <div class="feature-card" style="cursor: default;">
+            <div class="fc-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+            <div class="fc-title">Steam Demo</div>
+            <div class="fc-desc">For current playable demo content. Steam is the primary PC platform. Start here for the multiplayer demo.</div>
+            <span class="fc-badge confirmed">Playable now</span>
+          </div>
+          <div class="feature-card" style="cursor: default;">
+            <div class="fc-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="fc-title">Xbox Store</div>
+            <div class="fc-desc">For console platform confirmation, Xbox Play Anywhere, and online co-op / multiplayer 2-3 players capability.</div>
+            <span class="fc-badge confirmed">Platform confirmed</span>
+          </div>
+          <div class="feature-card" style="cursor: default;">
+            <div class="fc-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <div class="fc-title">PS5</div>
+            <div class="fc-desc">Rising search query demand is real, but no official PlayStation Store listing or publisher announcement confirms PS5 yet.</div>
+            <span class="fc-badge hold">Query signal only</span>
+          </div>
+          <div class="feature-card" style="cursor: default;">
+            <div class="fc-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <div class="fc-title">Game Pass</div>
+            <div class="fc-desc">Press articles reference Game Pass. The Xbox page does not list Game Pass as current availability. Not confirmed on official pages.</div>
+            <span class="fc-badge hold">Press signal only</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Platform capability table -->
+      <section class="panel section">
+        <h2>Platform Capability Table</h2>
+
+        <table class="data-table" style="margin-top: 14px;">
+          <thead>
+            <tr>
+              <th>Platform</th>
+              <th>Store status</th>
+              <th>Confidence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Steam</strong></td>
+              <td>Store page exists — "Coming soon" with no final date. Multiplayer demo page confirmed at <a href={SITE.steamDemoUrl} target="_blank" rel="noopener" style="color: var(--gold);">app/4050060</a>.</td>
+              <td><span class="source-tag official">Confirmed</span></td>
+            </tr>
+            <tr>
+              <td><strong>Xbox</strong></td>
+              <td>Xbox store page lists Xbox Play Anywhere, online co-op, online multiplayer 2-3 players, single player.</td>
+              <td><span class="source-tag official">Confirmed</span></td>
+            </tr>
+            <tr>
+              <td><strong>PS5</strong></td>
+              <td>No official PlayStation Store listing found in current evidence. Rising search demand tracked via Trends data.</td>
+              <td><span class="source-tag trends">Query signal only</span></td>
+            </tr>
+            <tr>
+              <td><strong>Game Pass</strong></td>
+              <td>Xbox page does not list Game Pass as current availability. Press articles reference it without official store confirmation.</td>
+              <td><span class="source-tag press">Press lead — not confirmed</span></td>
+            </tr>
+            <tr>
+              <td><strong>Switch / Switch 2</strong></td>
+              <td>No official page found in current evidence.</td>
+              <td><span class="source-tag community">Not confirmed</span></td>
+            </tr>
+            <tr>
+              <td><strong>Google Play</strong></td>
+              <td>No official page found for mobile.</td>
+              <td><span class="source-tag community">Not confirmed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Xbox capability notes -->
+      <section class="panel section">
+        <h2>Xbox Capability Notes</h2>
+        <p style="margin-top: 4px; font-size: 13px;">What the Xbox store page specifically supports — versus what still needs hands-on testing.</p>
+
+        <table class="data-table" style="margin-top: 14px;">
+          <thead>
+            <tr>
+              <th>Capability</th>
+              <th>What the page confirms</th>
+              <th>What needs testing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Xbox Play Anywhere</td>
+              <td>Listed on the Xbox store page.</td>
+              <td>Cross-save behavior in practice.</td>
+            </tr>
+            <tr>
+              <td>Online co-op / multiplayer</td>
+              <td>Online co-op and online multiplayer 2-3 players confirmed.</td>
+              <td>Matchmaking, invite flow, demo-specific multiplayer behavior.</td>
+            </tr>
+            <tr>
+              <td>Single player</td>
+              <td>Listed on the Xbox page.</td>
+              <td>Whether the Steam demo supports solo play.</td>
+            </tr>
+            <tr>
+              <td>Game Pass</td>
+              <td>Xbox page mentions subscription requirements for online multiplayer — not the same as confirming Game Pass availability.</td>
+              <td>Official Microsoft or publisher Game Pass announcement.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Official links -->
+      <section class="panel section">
+        <h2>Official Platform Links</h2>
+
+        <div class="link-list" style="margin-top: 14px;">
+          <a class="link-item" href={SITE.steamUrl} target="_blank" rel="noopener">
+            <div class="link-icon">Steam</div>
+            <div>
+              <strong>Steam Store</strong>
+              <p>Primary PC platform — check for current coming-soon and demo status</p>
+            </div>
+            <span class="link-badge good">Open</span>
+          </a>
+          <a class="link-item" href={SITE.steamDemoUrl} target="_blank" rel="noopener">
+            <div class="link-icon">Demo</div>
+            <div>
+              <strong>Steam Multiplayer Demo</strong>
+              <p>The only confirmed demo URL — primary entry point for current playable content</p>
+            </div>
+            <span class="link-badge good">Open</span>
+          </a>
+          <a class="link-item" href={SITE.xboxUrl} target="_blank" rel="noopener">
+            <div class="link-icon">Xbox</div>
+            <div>
+              <strong>Xbox Store</strong>
+              <p>Console platform confirmed — Xbox Play Anywhere + online co-op 2-3 players</p>
+            </div>
+            <span class="link-badge good">Open</span>
+          </a>
+        </div>
+      </section>
+
+    </div>
+
+    <aside>
+      <div class="panel side">
+        <h2>Confidence Key</h2>
+        <div style="display: grid; gap: 8px; margin-top: 12px;">
+          <div class="status-card good" style="padding: 10px 12px;">
+            <h3 style="font-size: 12px;">Confirmed</h3>
+            <p style="font-size: 11px;">Store page or official publisher source.</p>
+          </div>
+          <div class="status-card warn" style="padding: 10px 12px;">
+            <h3 style="font-size: 12px;">Query Signal / Press</h3>
+            <p style="font-size: 11px;">Real demand or press reference — no official confirmation yet.</p>
+          </div>
+          <div class="status-card muted" style="padding: 10px 12px;">
+            <h3 style="font-size: 12px;">Not Confirmed</h3>
+            <p style="font-size: 11px;">No official source found in current evidence.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel side" style="margin-top: 14px;">
+        <h2>Related Pages</h2>
+        <div style="display: grid; gap: 8px; margin-top: 12px;">
+          <p><a href="/release-date/" style="color: var(--gold);">→ Release Date Conflict</a></p>
+          <p><a href="/demo/" style="color: var(--gold);">→ Demo Guide</a></p>
+          <p><a href="/sources/" style="color: var(--gold);">→ Source Matrix</a></p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</Base>
+
+<style>
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  @media (max-width: 560px) {
+    .feature-grid { grid-template-columns: 1fr; }
+  }
+</style>

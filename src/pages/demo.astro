@@ -1,0 +1,221 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site';
+---
+
+<Base title="Demo Guide" description="Shift at Midnight demo guide — what the demo includes, what you can practice, and what not to expect before the full game.">
+  <div class="page-grid">
+    <div>
+
+      <!-- Hero -->
+      <div class="panel hero" style="padding: 24px 28px;">
+        <span class="eyebrow"><span class="dot green"></span> Demo Guide · {SITE.evidenceVersion}</span>
+        <h1>Demo Guide</h1>
+        <p class="lead">The Shift at Midnight multiplayer demo is live on Steam. Here is what it contains, what you can practice, and what the full game adds. No walkthrough solutions — just official scope and framework.</p>
+      </div>
+
+      <!-- At-a-glance -->
+      <section class="panel section">
+        <h2>Demo at a Glance</h2>
+
+        <table class="data-table" style="margin-top: 14px;">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Demo scope</th>
+              <th>Full game scope</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Intro content</strong></td>
+              <td>Included</td>
+              <td>Included</td>
+            </tr>
+            <tr>
+              <td><strong>Shift count</strong></td>
+              <td>3 pre-scripted shifts</td>
+              <td>13 randomly generated shifts</td>
+            </tr>
+            <tr>
+              <td><strong>Tools and weapons</strong></td>
+              <td>Limited set</td>
+              <td>Full inventory</td>
+            </tr>
+            <tr>
+              <td><strong>Content breadth</strong></td>
+              <td>Bounded intro to full game</td>
+              <td>Full breadth beyond demo</td>
+            </tr>
+            <tr>
+              <td><strong>Multiplayer</strong></td>
+              <td>Online co-op demo sessions</td>
+              <td>Online co-op confirmed</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- What you can practice -->
+      <section class="panel section">
+        <h2>What You Can Practice in the Demo</h2>
+        <p style="margin-top: 4px; font-size: 13px;">These task categories are confirmed from official demo page descriptions. Use the demo to build muscle memory before the full game.</p>
+
+        <div class="check-list" style="margin-top: 14px;">
+          <div class="check-item done">
+            <div class="check-num">✓</div>
+            <div class="check-text">
+              <strong>Stocking shelves</strong>
+              <p>Manage shelf inventory as a store task during the shift. Confirmed as a core loop task by the Steam demo description.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">✓</div>
+            <div class="check-text">
+              <strong>Meeting quota</strong>
+              <p>Quota targets are part of the shift structure. Practice balancing store tasks with customer inspection.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">✓</div>
+            <div class="check-text">
+              <strong>Taking deliveries</strong>
+              <p>Delivery management is a confirmed store task. How it interacts with inspection intensity is worth noting.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">✓</div>
+            <div class="check-text">
+              <strong>Cleaning the store</strong>
+              <p>Store cleanliness is a confirmed task category. Note how it competes for your attention during checks.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">✓</div>
+            <div class="check-text">
+              <strong>Interrogating customers</strong>
+              <p>Customer interrogation is the core detective action. Practice the three inspection categories: ID, computer details, behavior.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">✓</div>
+            <div class="check-text">
+              <strong>Checking ID, computer details, and behavior</strong>
+              <p>The three inspection categories confirmed by official sources. Use the demo to identify which category a customer signal falls into.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">✓</div>
+            <div class="check-text">
+              <strong>Danger response: board up, set traps, hide</strong>
+              <p>The survival phase is confirmed as an official game state. Practice the transition and your preferred response options.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pre-install checklist -->
+      <section class="panel section">
+        <h2>Demo Pre-Install Checklist</h2>
+        <p style="margin-top: 4px; font-size: 13px;">Before you start the demo, set yourself up to get the most useful test observations.</p>
+
+        <div class="check-list" style="margin-top: 14px;">
+          <div class="check-item done">
+            <div class="check-num">1</div>
+            <div class="check-text">
+              <strong>Open the Steam demo page first</strong>
+              <p>Bookmark <a href={SITE.steamDemoUrl} target="_blank" rel="noopener" style="color: var(--gold);">store.steampowered.com/app/4050060</a> as your entry point. It is the only confirmed demo URL.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">2</div>
+            <div class="check-text">
+              <strong>Decide your test format: solo or co-op</strong>
+              <p>Online co-op is confirmed on Steam. Whether solo play works in the demo is not yet verified — test both if possible.</p>
+            </div>
+            <span class="check-badge good">Test both</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">3</div>
+            <div class="check-text">
+              <strong>Set up a recording note template</strong>
+              <p>For each customer check: note the cue category (ID / computer / behavior), your co-op callout, the result, and what you would do differently.</p>
+            </div>
+            <span class="check-badge good">Template ready</span>
+          </div>
+          <div class="check-item partial">
+            <div class="check-num">4</div>
+            <div class="check-text">
+              <strong>Note the demo's save and progress system</strong>
+              <p>Does the demo have a save system? Does progress carry over? Observe and record for later reference.</p>
+            </div>
+            <span class="check-badge warn">Observe</span>
+          </div>
+          <div class="check-item hold">
+            <div class="check-num">5</div>
+            <div class="check-text">
+              <strong>Do not assume community solutions are correct</strong>
+              <p>Community guides may have answers — do not copy them. Verify everything in the demo yourself before publishing.</p>
+            </div>
+            <span class="check-badge muted">HOLD</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- What not to expect -->
+      <section class="panel section">
+        <h2>What Not to Expect from This Page</h2>
+
+        <div class="cannot-card" style="margin-top: 14px;">
+          <h3>✗ Not published here</h3>
+          <ul>
+            <li>Exact walkthrough solutions or shift-by-shift objectives</li>
+            <li>Specific customer tells, doppelganger answers, or fake customer identification</li>
+            <li>Best routes, secret locations, or hidden events</li>
+            <li>Exact keybinds or control layouts (not on official sources)</li>
+            <li>Final release date, pricing, or platform comparisons beyond official notes</li>
+            <li>Copied screenshots or frames from Steam, Xbox, or YouTube</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <aside>
+      <div class="panel side">
+        <h2>Official Links</h2>
+        <div style="display: grid; gap: 8px; margin-top: 12px;">
+          <div class="mini">
+            <h3>Steam Demo Page</h3>
+            <p>Primary confirmed source — bookmark this URL</p>
+            <p><a href={SITE.steamDemoUrl} target="_blank" rel="noopener" style="color: var(--gold);">Open Demo →</a></p>
+          </div>
+          <div class="mini">
+            <h3>itch.io (legacy)</h3>
+            <p>Older developer page — check Steam for current demo</p>
+            <p><a href="https://bunmuen.itch.io/shiftatmidnight" target="_blank" rel="noopener" style="color: var(--gold);">Open →</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel side" style="margin-top: 14px;">
+        <h2>Related Pages</h2>
+        <div style="display: grid; gap: 8px; margin-top: 12px;">
+          <p><a href="/beginner-guide/" style="color: var(--gold);">→ First Shift Guide</a></p>
+          <p><a href="/customer-checks/" style="color: var(--gold);">→ Customer Inspection</a></p>
+          <p><a href="/co-op/" style="color: var(--gold);">→ Co-op Prep Guide</a></p>
+          <p><a href="/survival-phase/" style="color: var(--gold);">→ Survival Phase</a></p>
+          <p><a href="/sources/" style="color: var(--gold);">→ Source Matrix</a></p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</Base>

@@ -1,0 +1,190 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site';
+---
+
+<Base title="Release Date Status" description="Shift at Midnight release date conflict tracker — what Steam, Xbox, press, and official sources say about launch.">
+  <div class="page-grid">
+    <div>
+      <div class="panel hero" style="padding: 24px 28px;">
+        <span class="eyebrow"><span class="dot warn"></span> Release Conflict Tracker · Evidence: {SITE.evidenceVersion}</span>
+        <h1>Release Date Status</h1>
+        <p class="lead">Multiple public sources reference different launch windows. No single date is confirmed as final. This page tracks the conflict, not a final answer.</p>
+
+        <div class="partial-panel" style="margin-top: 18px;">
+          <h3>⚠ No Confirmed Final Date</h3>
+          <p>Steam currently shows Coming soon. If you see a date elsewhere, treat it as one data point in a conflict — not as verified truth. Check Steam directly before relying on any date.</p>
+        </div>
+      </div>
+
+      <section class="panel section">
+        <h2>Source Timeline</h2>
+        <p style="margin-bottom: 14px; font-size: 13px;">Known public references ordered by earliest observed date. Last checked {SITE.evidenceVersion}.</p>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2026-04 (observed)</div>
+            <div class="timeline-content">
+              <strong>Gematsu: "Shift at Midnight launches May 28"</strong>
+              <p>Press article citing a launch date. Not an official platform announcement.</p>
+              <span class="timeline-badge warn">Unconfirmed — press only</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2026-07 (observed)</div>
+            <div class="timeline-content">
+              <strong>Steam Store: "Coming soon" — no date shown</strong>
+              <p>Steam product page does not display a specific launch date.</p>
+              <span class="timeline-badge good">Primary source — no date given</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2026-07 (observed)</div>
+            <div class="timeline-content">
+              <strong>PC Gamer: July 2026 release calendar entry</strong>
+              <p>References Shift at Midnight in a July-window roundup. Secondary press signal only.</p>
+              <span class="timeline-badge warn">Unconfirmed — press signal</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2026-07 (observed)</div>
+            <div class="timeline-content">
+              <strong>Xbox Store: Page exists, no date displayed</strong>
+              <p>Xbox product page confirmed but no specific launch date is shown on the page.</p>
+              <span class="timeline-badge good">Platform confirmed — no date</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2026-07 (observed)</div>
+            <div class="timeline-content">
+              <strong>TrueAchievements: Xbox Game Pass announcement article</strong>
+              <p>Article referencing Xbox Game Pass status. For discovery context — verify dates against official pages.</p>
+              <span class="timeline-badge warn">Press lead — verify dates</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel section">
+        <h2>What This Means</h2>
+        <div class="grid-2" style="margin-top: 14px;">
+          <div class="can-card">
+            <h3>✓ Safe to say</h3>
+            <ul>
+              <li>Steam shows Coming soon with no date</li>
+              <li>Xbox store page exists</li>
+              <li>Older press referenced May 28 (unconfirmed)</li>
+              <li>Recent press references July window</li>
+              <li>No single source has a verified final date</li>
+            </ul>
+          </div>
+          <div class="cannot-card">
+            <h3>✗ Not safe to say</h3>
+            <ul>
+              <li>Any specific date as the confirmed final release</li>
+              <li>"The game launches on [date]"</li>
+              <li>That any press date is definitely correct</li>
+              <li>PS5 release date or window (no source)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel section">
+        <h2>How to Check the Date Yourself</h2>
+        <p style="margin-top: 4px; font-size: 13px;">Use this order before trusting any release-date claim you see in search results, videos, or social posts.</p>
+
+        <div class="check-list" style="margin-top: 14px;">
+          <div class="check-item done">
+            <div class="check-num">1</div>
+            <div class="check-text">
+              <strong>Open the Steam page first</strong>
+              <p>If Steam still says Coming soon, this site treats any dated claim as unconfirmed unless another official page confirms it.</p>
+            </div>
+            <span class="check-badge good">Primary</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">2</div>
+            <div class="check-text">
+              <strong>Check the Xbox store page</strong>
+              <p>Xbox confirms the platform listing. A date only becomes strong if it appears on a platform page or official announcement.</p>
+            </div>
+            <span class="check-badge good">Platform</span>
+          </div>
+          <div class="check-item partial">
+            <div class="check-num">3</div>
+            <div class="check-text">
+              <strong>Compare press dates as conflict signals</strong>
+              <p>Press articles help explain why players see different dates, but they do not override current official/platform pages.</p>
+            </div>
+            <span class="check-badge warn">Secondary</span>
+          </div>
+          <div class="check-item hold">
+            <div class="check-num">4</div>
+            <div class="check-text">
+              <strong>Ignore unsourced countdown posts</strong>
+              <p>Countdowns, reposted dates, and community calendar entries are not used as final-date evidence here.</p>
+            </div>
+            <span class="check-badge muted">Not used</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel section">
+        <h2>Update Triggers We Watch</h2>
+        <div class="grid-2" style="margin-top: 14px;">
+          <div class="can-card">
+            <h3>Can update immediately</h3>
+            <ul>
+              <li>Steam changes from Coming soon to a dated release window</li>
+              <li>Xbox Store adds a release date or pre-install status</li>
+              <li>Kwalee or Bun Muen posts a dated announcement</li>
+              <li>Steam News publishes demo or launch timing details</li>
+            </ul>
+          </div>
+          <div class="cannot-card">
+            <h3>Still needs verification</h3>
+            <ul>
+              <li>A YouTube comment claims a new date</li>
+              <li>A wiki page edits in a date without a source</li>
+              <li>A press calendar lists a date but stores do not</li>
+              <li>Search snippets show a stale or cached date</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside>
+      <div class="panel side">
+        <h2>Source Links</h2>
+        <div style="display: grid; gap: 8px; margin-top: 12px;">
+          <div class="mini">
+            <h3>Steam Store</h3>
+            <p>Primary source — check directly for current status</p>
+            <p><a href={SITE.steamUrl} target="_blank" rel="noopener" style="color: var(--accent);">Open →</a></p>
+          </div>
+          <div class="mini">
+            <h3>Xbox Store</h3>
+            <p>Platform confirmed — no date shown</p>
+            <p><a href={SITE.xboxUrl} target="_blank" rel="noopener" style="color: var(--accent);">Open →</a></p>
+          </div>
+          <div class="mini">
+            <h3>Gematsu (April article)</h3>
+            <p>Press — one date reference, unconfirmed</p>
+            <p><a href="https://www.gematsu.com/2026/04/shift-at-midnight-launches-may-28" target="_blank" rel="noopener" style="color: var(--accent);">Open →</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel side" style="margin-top: 14px;">
+        <h2>Related Pages</h2>
+        <div style="display: grid; gap: 8px; margin-top: 12px;">
+          <p><a href="/demo/" style="color: var(--accent);">→ Demo Status</a></p>
+          <p><a href="/platforms/" style="color: var(--accent);">→ Platform Status</a></p>
+          <p><a href="/sources/" style="color: var(--accent);">→ Full Source Matrix</a></p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</Base>

@@ -1,0 +1,231 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site';
+---
+
+<Base title="First Shift Guide" description="Shift at Midnight first shift guide — store task loop, inspection basics, and danger response before you play.">
+  <div class="page-grid">
+    <div>
+
+      <!-- Hero -->
+      <div class="panel hero" style="padding: 24px 28px;">
+        <span class="eyebrow"><span class="dot yellow"></span> Spoiler-Safe Guide · {SITE.evidenceVersion}</span>
+        <h1>First Shift Guide</h1>
+        <p class="lead">Walk in prepared. Store task loop, inspection categories, danger response — all sourced from official platform descriptions. No walkthrough solutions, exact tells, or routes.</p>
+      </div>
+
+      <!-- Shift flow board -->
+      <section class="panel section">
+        <h2>First Shift Task Flow</h2>
+        <p style="margin-top: 4px; font-size: 13px;">This is the workflow shape confirmed by official sources. Use it as your mental map before the demo or launch — not as a step-by-step solution.</p>
+
+        <!-- Visual flow: 6 steps -->
+        <div class="flow-board" style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; margin-top: 16px;">
+
+          <div class="flow-step" style="padding: 12px 10px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255,255,255,0.04); text-align: center;">
+            <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255, 197, 95, 0.15); border: 1px solid rgba(255, 197, 95, 0.3); display: grid; place-items: center; margin: 0 auto 8px; color: var(--gold); font-weight: 800; font-size: 13px;">1</div>
+            <div style="font-size: 11px; font-weight: 700; color: var(--text); margin-bottom: 4px;">Arrive</div>
+            <div style="font-size: 10px; color: var(--muted-2);">Start shift. Understand your store layout.</div>
+          </div>
+
+          <div class="flow-step" style="padding: 12px 10px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255,255,255,0.04); text-align: center;">
+            <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255, 197, 95, 0.15); border: 1px solid rgba(255, 197, 95, 0.3); display: grid; place-items: center; margin: 0 auto 8px; color: var(--gold); font-weight: 800; font-size: 13px;">2</div>
+            <div style="font-size: 11px; font-weight: 700; color: var(--text); margin-bottom: 4px;">Store Tasks</div>
+            <div style="font-size: 10px; color: var(--muted-2);">Shelves, quota, deliveries, cleaning.</div>
+          </div>
+
+          <div class="flow-step" style="padding: 12px 10px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255,255,255,0.04); text-align: center;">
+            <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255, 197, 95, 0.15); border: 1px solid rgba(255, 197, 95, 0.3); display: grid; place-items: center; margin: 0 auto 8px; color: var(--gold); font-weight: 800; font-size: 13px;">3</div>
+            <div style="font-size: 11px; font-weight: 700; color: var(--text); margin-bottom: 4px;">Inspect</div>
+            <div style="font-size: 10px; color: var(--muted-2);">ID · Computer · Behavior</div>
+          </div>
+
+          <div class="flow-step" style="padding: 12px 10px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255,255,255,0.04); text-align: center;">
+            <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255, 197, 95, 0.15); border: 1px solid rgba(255, 197, 95, 0.3); display: grid; place-items: center; margin: 0 auto 8px; color: var(--gold); font-weight: 800; font-size: 13px;">4</div>
+            <div style="font-size: 11px; font-weight: 700; color: var(--text); margin-bottom: 4px;">Compare</div>
+            <div style="font-size: 10px; color: var(--muted-2);">Match signals to known categories.</div>
+          </div>
+
+          <div class="flow-step" style="padding: 12px 10px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255,255,255,0.04); text-align: center;">
+            <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255, 197, 95, 0.15); border: 1px solid rgba(255, 197, 95, 0.3); display: grid; place-items: center; margin: 0 auto 8px; color: var(--gold); font-weight: 800; font-size: 13px;">5</div>
+            <div style="font-size: 11px; font-weight: 700; color: var(--text); margin-bottom: 4px;">Communicate</div>
+            <div style="font-size: 10px; color: var(--muted-2);">Share findings with co-op team.</div>
+          </div>
+
+          <div class="flow-step" style="padding: 12px 10px; border: 1px solid rgba(255, 77, 106, 0.3); border-radius: 8px; background: rgba(255, 77, 106, 0.05); text-align: center;">
+            <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255, 77, 106, 0.15); border: 1px solid rgba(255, 77, 106, 0.3); display: grid; place-items: center; margin: 0 auto 8px; color: var(--red); font-weight: 800; font-size: 13px;">6</div>
+            <div style="font-size: 11px; font-weight: 700; color: var(--red); margin-bottom: 4px;">React</div>
+            <div style="font-size: 10px; color: var(--muted-2);">Board up / traps / hide if danger.</div>
+          </div>
+
+        </div>
+
+        <div class="partial-panel" style="margin-top: 14px;">
+          <h3>Flow note</h3>
+          <p>These steps describe the general shift structure from official sources. The exact loop order, time pressure, and transition points between steps are not published. Use the demo to experience the rhythm.</p>
+        </div>
+      </section>
+
+      <!-- Store task checklist -->
+      <section class="panel section">
+        <h2>Store Task Checklist</h2>
+        <p style="margin-top: 4px; font-size: 13px;">Four confirmed task types from official sources. These compete for your attention during a shift.</p>
+
+        <div class="check-list" style="margin-top: 14px;">
+          <div class="check-item done">
+            <div class="check-num">✓</div>
+            <div class="check-text">
+              <strong>Stocking shelves</strong>
+              <p>Keep inventory on the shelves. Neglecting this may affect quota or customer satisfaction — confirmed as a core store task.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">✓</div>
+            <div class="check-text">
+              <strong>Meeting quota</strong>
+              <p>Quota targets are part of the shift structure. Balance quota pressure against the time needed for customer inspection.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">✓</div>
+            <div class="check-text">
+              <strong>Taking deliveries</strong>
+              <p>Incoming deliveries are a confirmed store management task. Note how they affect your availability for customer checks.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">✓</div>
+            <div class="check-text">
+              <strong>Cleaning the store</strong>
+              <p>Store cleanliness is a confirmed task category. It may have thresholds or trigger conditions worth observing in the demo.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Inspection basics -->
+      <section class="panel section">
+        <h2>Inspection Basics</h2>
+        <p style="margin-top: 4px; font-size: 13px;">Three inspection categories confirmed by official sources. Use these as your classification framework during the demo.</p>
+
+        <div class="feature-grid" style="margin-top: 16px; grid-template-columns: repeat(3, minmax(0, 1fr));">
+          <div class="feature-card" style="cursor: default;">
+            <div class="fc-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3l-4 4-4-4"/></svg>
+            </div>
+            <div class="fc-title">ID Check</div>
+            <div class="fc-desc">Verify identity documents or official credentials. What makes an ID pass or fail is part of the inspection challenge.</div>
+            <span class="fc-badge confirmed">Confirmed category</span>
+          </div>
+          <div class="feature-card" style="cursor: default;">
+            <div class="fc-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="fc-title">Computer Details</div>
+            <div class="fc-desc">Review computer or device information presented by the customer. Compare against expected patterns for the shift.</div>
+            <span class="fc-badge confirmed">Confirmed category</span>
+          </div>
+          <div class="feature-card" style="cursor: default;">
+            <div class="fc-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="fc-title">Behavior Check</div>
+            <div class="fc-desc">Observe customer behavior and communication patterns. Behavioral signals are part of the inspection framework.</div>
+            <span class="fc-badge confirmed">Confirmed category</span>
+          </div>
+        </div>
+
+        <div class="hold-panel" style="margin-top: 14px;">
+          <h3>🔒 What stays HOLD</h3>
+          <p>Exact ID check passing criteria, specific computer detail anomalies to look for, and behavioral red flags are not published. Observe in the demo and record your findings before publishing.</p>
+        </div>
+      </section>
+
+      <!-- Danger response basics -->
+      <section class="panel section">
+        <h2>Danger Response Basics</h2>
+        <p style="margin-top: 4px; font-size: 13px;">When the survival phase activates, four official response options are available. Exact trigger conditions and tactics are held until verified.</p>
+
+        <div class="check-list" style="margin-top: 14px;">
+          <div class="check-item done">
+            <div class="check-num">↑</div>
+            <div class="check-text">
+              <strong>Board up</strong>
+              <p>Seal entry points to restrict dangerous customer movement. A confirmed survival option — practice the transition in the demo.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">⚡</div>
+            <div class="check-text">
+              <strong>Set traps</strong>
+              <p>Deploy available tools to gain tactical advantage. Trap types and inventory details are not confirmed — observe in demo.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">◐</div>
+            <div class="check-text">
+              <strong>Hide</strong>
+              <p>Break line of sight to avoid detection. Best hiding spots and duration limits require hands-on testing.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-num">◎</div>
+            <div class="check-text">
+              <strong>Communicate</strong>
+              <p>In co-op, share your position and what you see. Call category and location — not specific answers — to keep the challenge intact.</p>
+            </div>
+            <span class="check-badge good">Confirmed</span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <aside>
+      <div class="panel side">
+        <h2>Related Pages</h2>
+        <div style="display: grid; gap: 8px; margin-top: 12px;">
+          <p><a href="/customer-checks/" style="color: var(--gold);">→ Customer Inspection Guide</a></p>
+          <p><a href="/survival-phase/" style="color: var(--gold);">→ Survival Phase</a></p>
+          <p><a href="/co-op/" style="color: var(--gold);">→ Co-op Prep Guide</a></p>
+          <p><a href="/demo/" style="color: var(--gold);">→ Demo Guide</a></p>
+          <p><a href="/sources/" style="color: var(--gold);">→ Source Matrix</a></p>
+        </div>
+      </div>
+
+      <div class="panel side" style="margin-top: 14px;">
+        <h2>Evidence Basis</h2>
+        <div class="mini">
+          <h3>Source: Steam page</h3>
+          <p>Online co-op detective horror · store tasks, inspection, survival confirmed</p>
+        </div>
+        <div class="mini" style="margin-top: 8px;">
+          <h3>Source: Steam Demo</h3>
+          <p>Intro content · 3 pre-scripted shifts · limited tools and weapons confirmed</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</Base>
+
+<style>
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+  @media (max-width: 700px) {
+    .feature-grid { grid-template-columns: 1fr; }
+    .flow-board { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  }
+  @media (max-width: 400px) {
+    .flow-board { grid-template-columns: 1fr !important; }
+  }
+</style>
